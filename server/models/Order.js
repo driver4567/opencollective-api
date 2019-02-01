@@ -75,6 +75,12 @@ export default function(Sequelize, DataTypes) {
         type: DataTypes.INTEGER, // Total amount of the order in cents
       },
 
+      taxAmount: {
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        defaultValue: 0,
+      },
+
       description: DataTypes.STRING,
 
       publicMessage: DataTypes.STRING,
